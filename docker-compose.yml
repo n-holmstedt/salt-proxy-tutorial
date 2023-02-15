@@ -1,0 +1,30 @@
+
+services:
+  salt-master:
+    image: saltstack/salt:3005.1
+    hostname: salt-master
+    container_name: salt-master
+    volumes:
+     - ./master.conf:/etc/salt/master
+     - ./pillar/:/etc/salt/pillar/
+     - ./_proxy/:/etc/salt/_proxy/
+     - ./_modules/:/etc/salt/_modules/
+    env_file:
+      - ./env/master.env
+
+  delta-1:
+    image: saltstack/salt:3005.1
+    hostname: proxy-minion
+    container_name: proxy-minion
+    env_file:
+      - ./env/proxy.env
+
+  mock-api:
+    image: internal:mock_api
+    build:
+      context: mock-api
+      dockerfile: ./mocked_api/Dockerfile
+    hostname: mock-api
+    container_name: mock-api
+    ports:
+      - 5000:5000
