@@ -21,7 +21,6 @@ salt \* api.book id=1
 ```
 
 ## Following the "tutorial"
-```
 01 - ./env/proxy.env
 
 02 - ./pillar/top.sls
