@@ -21,12 +21,12 @@ salt \* api.book id=1
 ```
 
 ## Following the "tutorial"
-01 - ./env/proxy.env
+01 - [./env/proxy.env](https://github.com/n-holmstedt/salt-proxy-tutorial/blob/main/env/proxy.env)
 
-02 - ./pillar/top.sls
+02 - [./pillar/top.sls](https://github.com/n-holmstedt/salt-proxy-tutorial/blob/main/pillar/top.sls)
 
-03 - ./pillar/my-api-proxy.sls
+03 - [./pillar/my-api-proxy.sls](https://github.com/n-holmstedt/salt-proxy-tutorial/blob/main/pillar/my-api-proxy.sls)
 
-04 - ./_proxy/my_proxy.py
+04 - [./_proxy/my_proxy.py](https://github.com/n-holmstedt/salt-proxy-tutorial/blob/main/_proxy/my_proxy.py)
 
-05 - ./_modules/api.py
+05 - [./_modules/api.py](https://github.com/n-holmstedt/salt-proxy-tutorial/blob/main/_modules/api.py)
