@@ -22,8 +22,8 @@ services:
   mock-api:
     image: internal:mock_api
     build:
-      context: mock-api
-      dockerfile: ./mocked_api/Dockerfile
+      context: mocked_api
+      dockerfile: ./Dockerfile
     hostname: mock-api
     container_name: mock-api
     ports:
