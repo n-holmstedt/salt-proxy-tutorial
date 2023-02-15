@@ -126,7 +126,7 @@ def get(
     return response
 
 def shutdown(opts):
-    log.debug("shuddown called")
+    log.debug("shutdown called")
     return True
 
 def ping():
