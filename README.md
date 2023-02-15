@@ -19,3 +19,15 @@ Run salt-cli calling the custom execution module on the proxy-minion:
 ```
 salt \* api.book id=1
 ```
+
+## Following the "tutorial"
+```
+01 - ./env/proxy.env
+
+02 - ./pillar/top.sls
+
+03 - ./pillar/my-api-proxy.sls
+
+04 - ./_proxy/my_proxy.py
+
+05 - ./_modules/api.py
